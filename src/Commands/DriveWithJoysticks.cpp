@@ -26,7 +26,7 @@ void DriveWithJoysticks::Execute() {
 	double speed = driveProfile(Robot::oi.getAxis(LEFT_Y_AXIS));
 	double turn = driveProfile(Robot::oi.getAxis(RIGHT_X_AXIS));
 
-	Robot::drivetrain.arcadeDrive(speed, turn);
+	Robot::drivetrain.arcadeDrive(-speed, turn);
 }
 
 // Make this return true when this Command no longer needs to run execute()

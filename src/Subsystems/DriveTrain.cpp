@@ -7,6 +7,7 @@
 
 #include "DriveTrain.h"
 #include "../RobotMap.h"
+#include "Commands/DriveWithJoysticks.h"
 
 DriveTrain::DriveTrain() : Subsystem("ExampleSubsystem"),
 	rightBack(RIGHT_BACK),
@@ -23,6 +24,7 @@ DriveTrain::DriveTrain() : Subsystem("ExampleSubsystem"),
 void DriveTrain::InitDefaultCommand() {
 	// Set the default command for a subsystem here.
 	// SetDefaultCommand(new MySpecialCommand());
+	SetDefaultCommand(new DriveWithJoysticks());
 }
 
 // Put methods for controlling this subsystem

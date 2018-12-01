@@ -33,7 +33,7 @@ constexpr int DRIVER_JOY = 0;
 
 constexpr int LEFT_X_AXIS = 0;
 constexpr int LEFT_Y_AXIS = 1;
-constexpr int RIGHT_X_AXIS = 2;
-constexpr int RIGHT_Y_AXIS = 3;
-constexpr int LEFT_TRIGGER = 4;
-constexpr int RIGHT_TRIGGER = 5;
+constexpr int RIGHT_X_AXIS = 4;
+constexpr int RIGHT_Y_AXIS = 5;
+constexpr int LEFT_TRIGGER = 2;
+constexpr int RIGHT_TRIGGER = 3;
